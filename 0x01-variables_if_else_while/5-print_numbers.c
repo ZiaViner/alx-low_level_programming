@@ -1,22 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: prints lowercase alphabets
+ * main -Entry point
+ * Description: prints allsingle digit numbers of
+ * base 10 from 0
  * Return: Always 0 (success)
  */
 int main(void)
 {
-int ch;
+int a;
 
-for (ch = 'a'; ch <= 'z'; ch++)
+for (a = 0; a < 10; a++)
 {
-if (ch != 'e' && ch != 'q')
-{
-putchar(ch);
-}
-else
-{
-}
+printf("%d", a);
 }
 putchar('\n');
 return (0);
