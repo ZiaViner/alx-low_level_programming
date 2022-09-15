@@ -1,31 +1,23 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-*main- prints the largest prime factor
-*of a number
-*
-*Return: returns 0
+* print_number - Prints a number
+* @n: The number to print
 */
 
-int main(void)
+void print_number(int n)
 {
-	long number = 612852475143;
-	int inc;
+	unsigned int num = n;
 
-	while (inc++ < number / 2)
+	if (n < 0)
 	{
-	if (number % inc == 0)
+		putchar('-');
+		num = -num;
+	}
+	if (num > 9)
 	{
-		number /= 2;
-		continue;
+		print_number(num / 10);
 	}
-
-	for (inc = 3; inc < number / 2; inc += 2)
-	{
-		if (number % inc == 0)
-			number /= inc;
-	}
-	}
-	printf("%ld\n", number);
-	return (0);
+	putchar(num % 10 + '0');
 }
