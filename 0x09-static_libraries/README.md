@@ -1,4 +1,6 @@
-int _putchar(char c);
+Create the static library libmy.a containing all the functions listed 
+
+:int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
