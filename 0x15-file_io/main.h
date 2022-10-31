@@ -1,5 +1,5 @@
-#ifndef main.h
-#define main.h
+#ifndef _main_
+#define _main_
 
 #include <sys/types.h>
 #include <sys/stat.h>
